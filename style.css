@@ -1,0 +1,399 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration,input[type=search]::-webkit-search-results-button,input[type=search]::-webkit-search-results-decoration{-webkit-appearance:none;-moz-appearance:none}input[type=search]{-webkit-appearance:none;-moz-appearance:none;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}textarea{overflow:auto;vertical-align:top;resize:vertical}audio,canvas,video{display:inline-block;max-width:100%}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}a:focus{outline:thin dotted}a:active,a:hover{outline:0}img{border:0;-ms-interpolation-mode:bicubic}figure{margin:0}form{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}button,html,input,select,textarea{color:#222}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}img{vertical-align:middle}fieldset{border:0;margin:0;padding:0}textarea{resize:vertical}.chromeframe{margin:.2em 0;background:#ccc;color:#000;padding:.2em 0}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+/* Rubine: #C40058 */
+/* Gravy: #243746 */
+/* Mint Green: #C9DED9 */
+
+/* font-family: 'Merriweather', serif; */
+/* font-family: 'Roboto', sans-serif; */
+
+/* *************** */
+/* CSS starts here */
+/* *************** */
+
+/* Typography/Global */
+html {
+  font-size: 62.5%
+}
+
+.wrapper {
+  max-width: 1400px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+h1, 
+h2,
+h3 {
+  font-family: 'Merriweather', serif;
+}
+
+h4, 
+h5,
+p, 
+a {
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  color: #243746;
+  font-size: 4.7em;
+}
+
+h4 {
+  color: #243746;
+  font-size: 2.2em;
+}
+
+h5 {
+  font-size: 1.6em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
+/* Header */
+.news-bar {
+  background: #243746;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 1.6em;
+}
+
+.news-bar span{
+  font-weight: 700;
+}
+
+.news-bar a {
+  position: absolute;
+  right: 1%;
+  top: 0;
+  color: white;
+  padding: 1em 0;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: 4fr 1fr 4fr;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logo {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+nav a {
+  font-size: 1.6em;
+  color: #243746;
+}
+
+nav a:hover {
+  color: #C40058;
+}
+
+/* Main sale section */
+main {
+  background: #C9DED9 url('./assets/endy-dreamiest-offer-ever-sale-hero-1440x645-2x.jpg') no-repeat center center/cover;
+  -webkit-box-shadow: inset 0px 11px 15px -2px rgba(0,0,0,0.2); 
+  box-shadow: inset 0px 11px 15px -2px rgba(0,0,0,0.3);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+}
+
+main h1,
+main h4, 
+.button p {
+  margin-top: 1em;
+}
+
+.label {
+  background: #243746;
+  color: white;
+  display: inline-block;
+  padding: 1em;
+  margin-top: 2em; 
+  position: relative;
+} 
+
+.label:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-right: 10px solid #243746;
+}
+
+.label:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: -10px;
+  width: 0;
+  height: 0;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-left: 10px solid #243746;
+}
+
+.button {
+  font-size: 1.9em;
+  color: white;
+}
+
+.button p {
+  background: #C40058;
+  border-radius: 3px;
+  padding: 1em 2em;
+  display: inline-block;
+  border: 2px solid #C40058;
+  transition: .3s ease-out;
+}
+
+.button:hover p {
+  background: white;
+  color: #C40058;
+}
+
+/* Circle sticker */
+.sticker {
+  background: #243746;
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.sticker h5 {
+  align-self: center;
+  padding: 2em;
+  line-height: 1.3;
+}
+
+.sticker-container {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #243746;
+  border-radius: 50%;
+  position: absolute;
+  left: 63%;
+  top: 65%;
+  transform: rotate(15deg);
+}
+
+/* Footer disclaimer */
+footer p {
+  position: absolute;
+  bottom: 1%;
+  left: 0;
+  color: white;
+  font-size: 1.6em;
+  width: 100%;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+  text-transform: none;
+}
+
+body {
+  position: relative;
+}
+
+/* Overlay when user mouse exit browser */
+.overlay {
+  display: none;
+  position: absolute;
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay h1,
+.overlay h4 {
+  margin: .8em 2.5em;
+}
+.overlay hr {
+  width: 80%;
+}
+
+.overlay h1 {font-size: 40px;}
+
+.overlay a {font-size: 16px;}
+
+.overlay-content {
+  width: 400px;
+  display: flex;
+  text-align: center;
+  background: #C9DED9;
+  position: relative;
+}
+
+.overlay-content:first-child {
+  width: 50%;
+}
+
+.close {
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  cursor: pointer;
+}
+
+/* Mobile drop-down menu */
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: absolute;
+  width: 100%;
+  z-index: 1100;
+  transition: 0.3 ease-in;
+}
+
+.mobile-menu a {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+  padding: 1em;
+}
+
+.mobile-menu-open {
+  max-height: 500px;
+  overflow: auto;
+}
+
+/* *********************** */
+/* Media query starts here */
+/* *********************** */
+
+/* First break point */
+@media (max-width: 950px) {
+  nav a {font-size: 1.4em;}
+
+  .news-bar {padding: 1em 5em;}
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  h1 {font-size: 40px;}
+
+  h4 {font-size: 23px;}
+
+  h5 {font-size: 19px;}
+
+  p {font-size: 16px;}
+
+  .lang {display: none;}
+
+  .wrapper {width: 80%;}
+
+  .mobile {display: block;}
+
+  .desktop {display: none;}
+
+  .burger {color: #C40058;}
+
+  .cart {justify-self: right;}
+
+  nav ul {grid-template-columns: 2fr 1fr 2fr;}
+
+  main {
+    background: #C9DED9 url('./assets/endy-dreamiest-offer-ever-sale-hero-768x600-2x.jpg') no-repeat center center/cover;
+  }
+
+  .sticker-container {
+    transform: rotate(-15deg);
+    left: 18%;
+    top: 75%;
+  }
+
+  .button p {
+    display: block;
+  }
+
+  footer p {font-size: 13px;}
+
+/* Mobile */
+
+@media (max-width: 375px) {
+  nav ul {grid-template-columns: 1fr 1fr 1fr;}
+
+  h4 {font-size: 18px;}
+
+  p {font-size: 14px;}
+
+  main {
+    background: #C9DED9 url('./assets/endy-dreamiest-offer-ever-sale-hero-375x600-2x.jpg') no-repeat center center/cover;
+  }
+
+  .sticker-container {
+    transform: rotate(-15deg);
+    left: 5%;
+    top: 75%;
+  }
+}
