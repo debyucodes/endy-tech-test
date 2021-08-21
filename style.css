@@ -312,7 +312,7 @@ body {
   position: absolute;
   width: 100%;
   z-index: 1100;
-  transition: 0.3 ease-in;
+  transition: max-height .3s ease-in;
 }
 
 .mobile-menu a {
@@ -330,6 +330,12 @@ body {
 /* *********************** */
 /* Media query starts here */
 /* *********************** */
+
+/* First break point for overlay */
+@media (max-width: 1319px) {
+  .overlay h1,
+  .overlay h4 {margin: .5em 1em;}
+}
 
 /* First break point */
 @media (max-width: 950px) {

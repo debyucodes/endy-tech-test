@@ -11,10 +11,11 @@ let windowWidth;
 document.addEventListener('mouseleave', e => {
   windowWidth = window.innerWidth;
   e.preventDefault();
+  console.log('hi');
   // only fires when browser is larger than 1320px
-  if(windowWidth > 1320) {
-    overlay.classList.add('show')
-  } else if (windowWidth < 1319) {
+  if(windowWidth > 1100) {
+    overlay.classList.add('show');
+  } else if (windowWidth < 1099) {
     return;
   }
 })
@@ -29,12 +30,12 @@ close.addEventListener('click', e => {
 // close overlay when user clicks "back to shopping"
 back.addEventListener('click', e => {
   e.preventDefault();
-  console.log('hehe back to shopping')
   overlay.classList.remove('show')
 })
 
 // open burger menu
 burger.addEventListener('click', e => {
   e.preventDefault();
+  burger.classList.toggle('fa-chevron-left');
   mobileMenu.classList.toggle('mobile-menu-open');
 })
